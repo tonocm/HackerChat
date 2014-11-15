@@ -15,6 +15,7 @@
     "jade": "*",
     "bootstrap":"*",
     "jquery":"*",
-    "mongoose":"*"
+    "mongoose":"*",
+    "hipchat-client":"*"
   }
 }
