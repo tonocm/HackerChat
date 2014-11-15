@@ -10,6 +10,7 @@ var FacebookStrategy = require('passport-facebook');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var chat = require('./routes/chat');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use(passport.session());
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/chat', chat);
 
 
 // catch 404 and forward to error handler
