@@ -11,6 +11,8 @@ var GoogleStrategy = require('passport-google');
 var FacebookStrategy = require('passport-facebook');
 
 global.user;
+global.provider;
+global.name;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -77,6 +79,8 @@ passport.use(new FacebookStrategy({
   },
   function(accessToken, refreshToken, profile, done) {
      global.user = profile;
+     global.provider = profile.provider;
+     global.name = profile.displayName;
   }
 ));
 

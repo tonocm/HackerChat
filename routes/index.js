@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
 router.get('/login', passport.authenticate('facebook'));
 
 router.get('/dashboard', function(req, res) {
-	res.render('dashboard', {pageData: {title: 'Dashboard', userName: global.user.displayName}});
+	res.render('dashboard', {pageData: {title: 'Dashboard', userName: global.provider}});
 });
 
 module.exports = router;
