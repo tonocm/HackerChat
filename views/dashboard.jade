@@ -7,9 +7,6 @@ block content
   p #{pageData.userName}
   form(name="myHackathons", action="/myHackathons")
     input(type="submit", value="My Hackathons")
-  ul
-    each val in #{pageData.body.results.collection1}
-	  	li = val.event_name.text
-	  	li = val.event_date.text
+  p #{pageData.body}
   p end
 

@@ -17,16 +17,11 @@ router.get('/auth/facebook/callback',
 
 router.get('/dashboard', function(req, res) {
 	var request = require("request");
-	var myBody;
 
 	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y", 
 	function(err, response, body) {
-	  //console.log(body);
-	  myBody = body;
+	  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: body}});
 	});
-
-	myBody
-	res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(myBody)}});
 });
 
 module.exports = router;
