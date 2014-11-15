@@ -9,8 +9,12 @@ block content
     input(type="submit", value="My Hackathons")
   ul
     each val, index in pageData.body['results']['collection1']
+      ;w
+      img(src="#{val.event_image.src}")
       li
         a(href="#{val.event_name.href}") #{val.event_name.text}
-  p #{pageData.body['results']['collection1']}
+        ul
+          li #{val.event_date.text}
+          li #{val.event_location.text}
+p #{pageData.body['results']['collection1']}
   p end
-
