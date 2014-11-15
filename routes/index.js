@@ -8,10 +8,15 @@ router.get('/', function(req, res) {
   res.render('index', { pageData: {title: 'Express'}});
 });
 
-router.get('/login', passport.authenticate('facebook'));
+router.get('/auth/facebook', passport.authenticate('facebook'));
+
+router.get('/auth/facebook/callback', 
+  passport.authenticate('facebook', { successRedirect: '/dashboard',
+                                      failureRedirect: '/' }));
 
 router.get('/dashboard', function(req, res) {
-	res.render('dashboard', {pageData: {title: 'Dashboard', userName: global.provider}});
+	console.log(req.user);
+	res.render('dashboard', {pageData: {title: 'Dashboard', userName: req.user.displayName}});
 });
 
 module.exports = router;

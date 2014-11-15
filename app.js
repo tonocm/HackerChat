@@ -6,13 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var passport = require('passport');
-var TwitterStrategy = require('passport-twitter');
-var GoogleStrategy = require('passport-google');
 var FacebookStrategy = require('passport-facebook');
 
-global.user;
-global.provider;
-global.name;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -75,21 +70,20 @@ app.use(function(err, req, res, next) {
 passport.use(new FacebookStrategy({
     clientID: 829243480452780,
     clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
-    callbackURL: "http://hackerchat.me/dashboard"
+    callbackURL: "/auth/facebook/callback"
   },
   function(accessToken, refreshToken, profile, done) {
-
-
-      router.get('/dashboard', function(req, res) {
-        res.render('dashboard', {pageData: {title: 'Dashboard', userName: profile.displayName}});
-      });
-
-
-     global.user = profile;
-     global.provider = profile.provider;
-     global.name = profile.displayName;
+    done(null,profile);
   }
 ));
+
+// serialize and deserialize
+passport.serializeUser(function(user, done) {
+done(null, user);
+});
+passport.deserializeUser(function(obj, done) {
+done(null, obj);
+});
 
 //================================
 
