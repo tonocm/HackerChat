@@ -16,6 +16,7 @@
     "bootstrap":"*",
     "jquery":"*",
     "mongoose":"*",
-    "hipchat-client":"*"
+    "hipchat-client":"*",
+    "coffee-script":"*"
   }
 }
