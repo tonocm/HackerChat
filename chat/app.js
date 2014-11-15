@@ -4,6 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var session = require('express-session');
+var passport = require('passport');
+var TwitterStrategy = require('passport-twitter');
+var GoogleStrategy = require('passport-google');
+var FacebookStrategy = require('passport-facebook');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -21,9 +26,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(session({secret: 'supernova', saveUninitialized: true, resave: true}));
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', routes);
 app.use('/users', users);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -55,6 +64,21 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
+
+
+//=========== PASSPORT ===========
+
+passport.use(new FacebookStrategy({
+    clientID: 829243480452780,
+    clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
+    callbackURL: "http://hackerchat.me/"
+  },
+  function(accessToken, refreshToken, profile, done) {
+     global.user = profile;
+  }
+));
+
+//================================
 
 
 module.exports = app;

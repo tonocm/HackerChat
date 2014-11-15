@@ -3,4 +3,9 @@ extends layout
 block content
   title= HackerChat
   h1= HackerChat
-  p Welcome to #{title}
+  p Welcome to #{pageData.title}
+  div.loginbox
+    form(name="login", action="/login")
+      input(type="submit", value="Facebook")
+
+
