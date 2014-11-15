@@ -73,7 +73,7 @@ app.use(function(err, req, res, next) {
 passport.use(new FacebookStrategy({
     clientID: 829243480452780,
     clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
-    callbackURL: "http://hackerchat.me/"
+    callbackURL: "http://hackerchat.me/dashboard"
   },
   function(accessToken, refreshToken, profile, done) {
      global.user = profile;
