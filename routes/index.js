@@ -10,8 +10,8 @@ router.get('/', function(req, res) {
 
 router.get('/login', passport.authenticate('facebook'));
 
-router.get('/dashboard' function(req, res) {
-	res.render('dashboard', {pageData: {title: 'Dashboard', userName: global.user.displayName}})
+router.get('/dashboard', function(req, res) {
+	res.render('dashboard', {pageData: {title: 'Dashboard', userName: global.user.displayName}});
 });
 
 module.exports = router;
