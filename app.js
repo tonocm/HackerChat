@@ -69,7 +69,7 @@ app.use(function(err, req, res, next) {
 //=========== PASSPORT ===========
 
 var Parse = require('parse').Parse;
- 
+
 Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
 
 // serialize and deserialize
@@ -101,9 +101,9 @@ passport.use(new FacebookStrategy({
       }
     });
 
-  
-    
-    
+
+
+
 
     done(null,profile);
   }
