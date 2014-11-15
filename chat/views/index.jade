@@ -6,6 +6,6 @@ block content
   p Welcome to #{pageData.title}
   div.loginbox
     form(name="login", action="/login", method="post")
-      input(type="text", name="user")
-      input(type="password", name="pass")
-      input(type="submit", value="login")
+      input(type="text", name="user", placeholder="username")
+      input(type="password", name="pass", placeholder="password")
+      input(type="submit", value="login”)
