@@ -1,21 +1,17 @@
 var express = require('express');
 var passport = require('passport');
+var FacebookStrategy = require('passport-facebook');
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { pageData: {title: 'HackerChat'}});
+  res.render('index', { pageData: {title: 'Express'}});
 });
 
-router.post('/login',
+//router.get('/facebook', function(req, res) {
+ // res.send('im the about page!');
+//});
 
-  passport.authenticate('local'),
-  function(req, res) {
-    // If this function gets called, authentication was successful.
-    // `req.user` contains the authenticated user.
-    //Eddie
-    res.redirect('/users/' + req.user.username);
-  });
-
+router.get('/login', passport.authenticate('facebook'));
 
 module.exports = router;
