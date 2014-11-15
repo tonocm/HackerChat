@@ -9,7 +9,8 @@ block content
     input(type="submit", value="My Hackathons")
   ul
     each val, index in pageData.body['results']['collection1']
-      li= index + ': ' + val.event_name.text
+      li
+        a(href="#{val.event_name.href}") #{val.event_name.text}
   p #{pageData.body['results']['collection1']}
   p end
 
