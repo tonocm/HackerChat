@@ -24,4 +24,8 @@ router.get('/dashboard', function(req, res) {
 	});
 });
 
+router.get('/myhacks', function(req, res) {
+	res.render('myhacks', {pageData: {title: 'Your Hackathons', userName: req.user.displayName}});
+});
+
 module.exports = router;
