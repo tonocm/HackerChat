@@ -1,0 +1,736 @@
+{
+  "name": "mlh_events",
+  "count": 36,
+  "frequency": "Daily",
+  "version": 1,
+  "newdata": false,
+  "lastrunstatus": "success",
+  "lastsuccess": "Sat Nov 15 2014 18:25:13 GMT+0000 (UTC)",
+  "thisversionrun": "Sat Nov 15 2014 18:25:12 GMT+0000 (UTC)",
+  "thisversionstatus": "success",
+  "nextrun": "Sun Nov 16 2014 18:25:13 GMT+0000 (UTC)",
+  "results": {
+    "collection1": [
+      {
+        "event_name": {
+          "text": "GeauxHack",
+          "href": "http:\/\/geauxhack.com\/"
+        },
+        "event_date": {
+          "text": "August 30th - 31st",
+          "href": "http:\/\/geauxhack.com\/"
+        },
+        "event_location": {
+          "text": "Baton Rouge, LA",
+          "href": "http:\/\/geauxhack.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/061\/thumb\/geauxhack.jpg?1403123830",
+          "href": "http:\/\/geauxhack.com\/",
+          "alt": "Geauxhack"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HopHacks",
+          "href": "http:\/\/hophacks.com"
+        },
+        "event_date": {
+          "text": "September 5th - 7th",
+          "href": "http:\/\/hophacks.com"
+        },
+        "event_location": {
+          "text": "Baltimore, MD",
+          "href": "http:\/\/hophacks.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/080\/thumb\/hophacks.png?1408029821",
+          "href": "http:\/\/hophacks.com",
+          "alt": "Hophacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "MHacks",
+          "href": "http:\/\/mhacks.org"
+        },
+        "event_date": {
+          "text": "September 5th - 7th",
+          "href": "http:\/\/mhacks.org"
+        },
+        "event_location": {
+          "text": "Ann Arbor, MI",
+          "href": "http:\/\/mhacks.org"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/059\/thumb\/mhacks.jpg?1405537604",
+          "href": "http:\/\/mhacks.org",
+          "alt": "Mhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackISU",
+          "href": "http:\/\/hackisu.com\/"
+        },
+        "event_date": {
+          "text": "September 12th - 14th",
+          "href": "http:\/\/hackisu.com\/"
+        },
+        "event_location": {
+          "text": "Ames, IA",
+          "href": "http:\/\/hackisu.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/075\/thumb\/hackisu.jpg?1406326056",
+          "href": "http:\/\/hackisu.com\/",
+          "alt": "Hackisu"
+        }
+      },
+      {
+        "event_name": {
+          "text": "PennApps X",
+          "href": "http:\/\/pennapps.com"
+        },
+        "event_date": {
+          "text": "September 12th - 14th",
+          "href": "http:\/\/pennapps.com"
+        },
+        "event_location": {
+          "text": "Philadelphia, PA",
+          "href": "http:\/\/pennapps.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/050\/thumb\/pennapps.png?1402058977",
+          "href": "http:\/\/pennapps.com",
+          "alt": "Pennapps"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackGT",
+          "href": "http:\/\/hackgt.com\/"
+        },
+        "event_date": {
+          "text": "September 19th - 21st",
+          "href": "http:\/\/hackgt.com\/"
+        },
+        "event_location": {
+          "text": "Atlanta, GA",
+          "href": "http:\/\/hackgt.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/058\/thumb\/hackgt2.png?1403144124",
+          "href": "http:\/\/hackgt.com\/",
+          "alt": "Hackgt2"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Hack the North",
+          "href": "http:\/\/hackthenorth.com"
+        },
+        "event_date": {
+          "text": "September 19th - 21st",
+          "href": "http:\/\/hackthenorth.com"
+        },
+        "event_location": {
+          "text": "Waterloo, ON",
+          "href": "http:\/\/hackthenorth.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/042\/thumb\/hackthenorth.png?1402057936",
+          "href": "http:\/\/hackthenorth.com",
+          "alt": "Hackthenorth"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Unhackathon",
+          "href": "http:\/\/www.unhackathon.org\/"
+        },
+        "event_date": {
+          "text": "September 19th - 21st",
+          "href": "http:\/\/www.unhackathon.org\/"
+        },
+        "event_location": {
+          "text": "Stony Brook, NY",
+          "href": "http:\/\/www.unhackathon.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/057\/thumb\/unhackathon.png?1402504904",
+          "href": "http:\/\/www.unhackathon.org\/",
+          "alt": "Unhackathon"
+        }
+      },
+      {
+        "event_name": {
+          "text": "BigRed\/\/Hacks",
+          "href": "http:\/\/bigredhacks.com"
+        },
+        "event_date": {
+          "text": "September 26th - 28th",
+          "href": "http:\/\/bigredhacks.com"
+        },
+        "event_location": {
+          "text": "Ithaca, NY",
+          "href": "http:\/\/bigredhacks.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/045\/thumb\/bigredhacks.png?1402058405",
+          "href": "http:\/\/bigredhacks.com",
+          "alt": "Bigredhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackPR",
+          "href": "http:\/\/hackpr.io\/"
+        },
+        "event_date": {
+          "text": "September 27th - 28th",
+          "href": "http:\/\/hackpr.io\/"
+        },
+        "event_location": {
+          "text": "Mayaguez, PR",
+          "href": "http:\/\/hackpr.io\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/077\/thumb\/hackpr.png?1407691709",
+          "href": "http:\/\/hackpr.io\/",
+          "alt": "Hackpr"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackUMBC",
+          "href": "http:\/\/hackumbc.org\/"
+        },
+        "event_date": {
+          "text": "September 27th - 28th",
+          "href": "http:\/\/hackumbc.org\/"
+        },
+        "event_location": {
+          "text": "Baltimore, MD",
+          "href": "http:\/\/hackumbc.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/082\/thumb\/hackumbc.png?1408031812",
+          "href": "http:\/\/hackumbc.org\/",
+          "alt": "Hackumbc"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Cal Hacks",
+          "href": "http:\/\/www.calhacks.io"
+        },
+        "event_date": {
+          "text": "October 3rd - 5th",
+          "href": "http:\/\/www.calhacks.io"
+        },
+        "event_location": {
+          "text": "Berkeley, CA",
+          "href": "http:\/\/www.calhacks.io"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/043\/thumb\/calhacks.png?1402058011",
+          "href": "http:\/\/www.calhacks.io",
+          "alt": "Calhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Hack Mizzou",
+          "href": "http:\/\/www.hackmizzou.com"
+        },
+        "event_date": {
+          "text": "October 3rd - 5th",
+          "href": "http:\/\/www.hackmizzou.com"
+        },
+        "event_location": {
+          "text": "Columbia, MO",
+          "href": "http:\/\/www.hackmizzou.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/048\/thumb\/hackmizzou.png?1402058798",
+          "href": "http:\/\/www.hackmizzou.com",
+          "alt": "Hackmizzou"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackMIT",
+          "href": "http:\/\/www.hackmit.org"
+        },
+        "event_date": {
+          "text": "October 4th - 5th",
+          "href": "http:\/\/www.hackmit.org"
+        },
+        "event_location": {
+          "text": "Cambridge, MA",
+          "href": "http:\/\/www.hackmit.org"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/049\/thumb\/hackmit.png?1402058887",
+          "href": "http:\/\/www.hackmit.org",
+          "alt": "Hackmit"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackRU",
+          "href": "http:\/\/hackru.org\/"
+        },
+        "event_date": {
+          "text": "October 11th - 12th",
+          "href": "http:\/\/hackru.org\/"
+        },
+        "event_location": {
+          "text": "New Brunswick, NJ",
+          "href": "http:\/\/hackru.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/076\/thumb\/hackru.png?1407691573",
+          "href": "http:\/\/hackru.org\/",
+          "alt": "Hackru"
+        }
+      },
+      {
+        "event_name": {
+          "text": "BoilerMake",
+          "href": "http:\/\/boilermake.org\/"
+        },
+        "event_date": {
+          "text": "October 17th - 19th",
+          "href": "http:\/\/boilermake.org\/"
+        },
+        "event_location": {
+          "text": "West Lafayette, IN",
+          "href": "http:\/\/boilermake.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/071\/thumb\/boilermake.png?1404142644",
+          "href": "http:\/\/boilermake.org\/",
+          "alt": "Boilermake"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Dubhacks",
+          "href": "http:\/\/dubhacks.co\/"
+        },
+        "event_date": {
+          "text": "October 17th - 18th",
+          "href": "http:\/\/dubhacks.co\/"
+        },
+        "event_location": {
+          "text": "Seattle, WA",
+          "href": "http:\/\/dubhacks.co\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/072\/thumb\/dubhacks.png?1404743640",
+          "href": "http:\/\/dubhacks.co\/",
+          "alt": "Dubhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "hackNY",
+          "href": "http:\/\/www.hackNY.org"
+        },
+        "event_date": {
+          "text": "October 18th - 19th",
+          "href": "http:\/\/www.hackNY.org"
+        },
+        "event_location": {
+          "text": "New York, NY",
+          "href": "http:\/\/www.hackNY.org"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/044\/thumb\/hackny.png?1402058320",
+          "href": "http:\/\/www.hackNY.org",
+          "alt": "Hackny"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackTX",
+          "href": "http:\/\/hacktx.com\/"
+        },
+        "event_date": {
+          "text": "October 18th - 19th",
+          "href": "http:\/\/hacktx.com\/"
+        },
+        "event_location": {
+          "text": "Austin, TX",
+          "href": "http:\/\/hacktx.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/056\/thumb\/hacktx.png?1402501894",
+          "href": "http:\/\/hacktx.com\/",
+          "alt": "Hacktx"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Kent Hack Enough",
+          "href": "http:\/\/hacksu.cs.kent.edu\/khe2014"
+        },
+        "event_date": {
+          "text": "October 24th - 26th",
+          "href": "http:\/\/hacksu.cs.kent.edu\/khe2014"
+        },
+        "event_location": {
+          "text": "Kent, OH",
+          "href": "http:\/\/hacksu.cs.kent.edu\/khe2014"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/051\/thumb\/kenthackenough.jpg?1402059414",
+          "href": "http:\/\/hacksu.cs.kent.edu\/khe2014",
+          "alt": "Kenthackenough"
+        }
+      },
+      {
+        "event_name": {
+          "text": "TAMUHack",
+          "href": "http:\/\/tamuhack.com\/"
+        },
+        "event_date": {
+          "text": "October 24th - 25th",
+          "href": "http:\/\/tamuhack.com\/"
+        },
+        "event_location": {
+          "text": "College Station, TX",
+          "href": "http:\/\/tamuhack.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/063\/thumb\/tamuhack.png?1403901116",
+          "href": "http:\/\/tamuhack.com\/",
+          "alt": "Tamuhack"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackNC",
+          "href": "http:\/\/hacknc.us\/"
+        },
+        "event_date": {
+          "text": "October 25th - 26th",
+          "href": "http:\/\/hacknc.us\/"
+        },
+        "event_location": {
+          "text": "Chapel Hill, NC",
+          "href": "http:\/\/hacknc.us\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/079\/thumb\/hacknc.png?1407691983",
+          "href": "http:\/\/hacknc.us\/",
+          "alt": "Hacknc"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Bay BitHack",
+          "href": "http:\/\/baybithack.com"
+        },
+        "event_date": {
+          "text": "November 1st - 2nd",
+          "href": "http:\/\/baybithack.com"
+        },
+        "event_location": {
+          "text": "Berkeley, CA",
+          "href": "http:\/\/baybithack.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/100\/thumb\/baybithack.jpg?1414773810",
+          "href": "http:\/\/baybithack.com",
+          "alt": "Baybithack"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackCC",
+          "href": "http:\/\/www.hackcc.org\/"
+        },
+        "event_date": {
+          "text": "November 7th - 9th",
+          "href": "http:\/\/www.hackcc.org\/"
+        },
+        "event_location": {
+          "text": "Santa Monica, CA",
+          "href": "http:\/\/www.hackcc.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/081\/thumb\/hackcc.jpg?1408460823",
+          "href": "http:\/\/www.hackcc.org\/",
+          "alt": "Hackcc"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackHolyoke",
+          "href": "http:\/\/hackholyoke.org\/ "
+        },
+        "event_date": {
+          "text": "November 7th - 8th",
+          "href": "http:\/\/hackholyoke.org\/ "
+        },
+        "event_location": {
+          "text": "South Hadley, MA",
+          "href": "http:\/\/hackholyoke.org\/ "
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/095\/thumb\/hackholyoke.png?1412641847",
+          "href": "http:\/\/hackholyoke.org\/ ",
+          "alt": "Hackholyoke"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackSC",
+          "href": "http:\/\/f2014.hacksc.com\/"
+        },
+        "event_date": {
+          "text": "November 7th - 9th",
+          "href": "http:\/\/f2014.hacksc.com\/"
+        },
+        "event_location": {
+          "text": "Los Angeles, CA",
+          "href": "http:\/\/f2014.hacksc.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/089\/thumb\/hacksc2.png?1414020314",
+          "href": "http:\/\/f2014.hacksc.com\/",
+          "alt": "Hacksc2"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackNJIT",
+          "href": "http:\/\/hacknjit.org"
+        },
+        "event_date": {
+          "text": "November 8th - 9th",
+          "href": "http:\/\/hacknjit.org"
+        },
+        "event_location": {
+          "text": "Newark, NJ",
+          "href": "http:\/\/hacknjit.org"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/088\/thumb\/hacknjit.png?1411061301",
+          "href": "http:\/\/hacknjit.org",
+          "alt": "Hacknjit"
+        }
+      },
+      {
+        "event_name": {
+          "text": "RamHacks",
+          "href": "http:\/\/ramhacks.vcu.edu\/"
+        },
+        "event_date": {
+          "text": "November 8th - 9th",
+          "href": "http:\/\/ramhacks.vcu.edu\/"
+        },
+        "event_location": {
+          "text": "Richmond, VA",
+          "href": "http:\/\/ramhacks.vcu.edu\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/074\/thumb\/ramhacks.png?1406324384",
+          "href": "http:\/\/ramhacks.vcu.edu\/",
+          "alt": "Ramhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "AppHack",
+          "href": "http:\/\/cs.appstate.edu\/apphack\/"
+        },
+        "event_date": {
+          "text": "November 14th - 15th",
+          "href": "http:\/\/cs.appstate.edu\/apphack\/"
+        },
+        "event_location": {
+          "text": "Boone, NC",
+          "href": "http:\/\/cs.appstate.edu\/apphack\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/099\/thumb\/apphack.png?1414773691",
+          "href": "http:\/\/cs.appstate.edu\/apphack\/",
+          "alt": "Apphack"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Design & Hack",
+          "href": "http:\/\/www.designandhack.org"
+        },
+        "event_date": {
+          "text": "November 14th - 16th",
+          "href": "http:\/\/www.designandhack.org"
+        },
+        "event_location": {
+          "text": "New York, NY",
+          "href": "http:\/\/www.designandhack.org"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/101\/thumb\/designandhack.png?1414787330",
+          "href": "http:\/\/www.designandhack.org",
+          "alt": "Designandhack"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackPrinceton",
+          "href": "http:\/\/www.hackprinceton.com"
+        },
+        "event_date": {
+          "text": "November 14th - 16th",
+          "href": "http:\/\/www.hackprinceton.com"
+        },
+        "event_location": {
+          "text": "Princeton, NJ",
+          "href": "http:\/\/www.hackprinceton.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/053\/thumb\/hackprinceton.png?1413918237",
+          "href": "http:\/\/www.hackprinceton.com",
+          "alt": "Hackprinceton"
+        }
+      },
+      {
+        "event_name": {
+          "text": "RevolutionUC",
+          "href": "http:\/\/revolutionuc.com"
+        },
+        "event_date": {
+          "text": "November 14th - 16th",
+          "href": "http:\/\/revolutionuc.com"
+        },
+        "event_location": {
+          "text": "Cincinnati, OH",
+          "href": "http:\/\/revolutionuc.com"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/094\/thumb\/revolutionuc.png?1412639088",
+          "href": "http:\/\/revolutionuc.com",
+          "alt": "Revolutionuc"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackDuke",
+          "href": "http:\/\/www.hackduke.com\/"
+        },
+        "event_date": {
+          "text": "November 15th - 16th",
+          "href": "http:\/\/www.hackduke.com\/"
+        },
+        "event_location": {
+          "text": "Durham, NC",
+          "href": "http:\/\/www.hackduke.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/086\/thumb\/hackduke.png?1410315346",
+          "href": "http:\/\/www.hackduke.com\/",
+          "alt": "Hackduke"
+        }
+      },
+      {
+        "event_name": {
+          "text": "HackRPI",
+          "href": "http:\/\/www.hackrpi.com\/"
+        },
+        "event_date": {
+          "text": "November 15th - 16th",
+          "href": "http:\/\/www.hackrpi.com\/"
+        },
+        "event_location": {
+          "text": "Troy, NY",
+          "href": "http:\/\/www.hackrpi.com\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/060\/thumb\/hackrpi.png?1402587533",
+          "href": "http:\/\/www.hackrpi.com\/",
+          "alt": "Hackrpi"
+        }
+      },
+      {
+        "event_name": {
+          "text": "Wildhacks",
+          "href": "http:\/\/wildhacks.org\/"
+        },
+        "event_date": {
+          "text": "November 22nd - 23rd",
+          "href": "http:\/\/wildhacks.org\/"
+        },
+        "event_location": {
+          "text": "Evanston, IL",
+          "href": "http:\/\/wildhacks.org\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/073\/thumb\/wildhacks.png?1405369401",
+          "href": "http:\/\/wildhacks.org\/",
+          "alt": "Wildhacks"
+        }
+      },
+      {
+        "event_name": {
+          "text": "LocalHackDay",
+          "href": "http:\/\/localhackday.mlh.io\/"
+        },
+        "event_date": {
+          "text": "December 6th",
+          "href": "http:\/\/localhackday.mlh.io\/"
+        },
+        "event_location": {
+          "text": "NYC, NY",
+          "href": "http:\/\/localhackday.mlh.io\/"
+        },
+        "event_image": {
+          "text": "",
+          "src": "https:\/\/s3.amazonaws.com\/assets.mlh.io\/events\/logos\/000\/000\/084\/thumb\/localhackday.png?1408930969",
+          "href": "http:\/\/localhackday.mlh.io\/",
+          "alt": "Localhackday"
+        }
+      }
+    ]
+  }
+}

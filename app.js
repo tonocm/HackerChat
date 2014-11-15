@@ -7,8 +7,6 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
-var Parse = require('parse').Parse;
-Parse.initialize("Your App Id", "Your JavaScript Key");
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -91,18 +89,19 @@ passport.use(new FacebookStrategy({
     query.equalTo("fId", profile.id);
     query.find({
       success: function(usersPosts) {
-        console.log("entered");
+        if(usersPosts.length == 0){
+          var testObject = new TestObject();
+            testObject.save({fId: profile.id, name: profile.displayName, experience: "zero", language: "all", team: "none", interest: "all"}, {
+              success: function(object) {
+                console.log("saved");
+              }});
+        }
       }
     });
-    console.log(profile.displayName);
-    console.log(profile.id);
-    var testObject = new TestObject();
-    testObject.save({fId: profile.id, name: profile.displayName,
-                      experience: "zero", language: "all", team: "none", interest: "all"}, {
-      success: function(object) {
-        console.log("saved");
-      }
-    })
+
+  
+    
+    
 
     done(null,profile);
   }
