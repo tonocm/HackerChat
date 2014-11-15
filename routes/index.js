@@ -24,7 +24,9 @@ router.get('/dashboard', function(req, res) {
 	  //console.log(body);
 	  myBody = body;
 	});
-	res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: myBody}});
+
+	myBody
+	res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(myBody)}});
 });
 
 module.exports = router;
