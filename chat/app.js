@@ -73,7 +73,9 @@ passport.use(new FacebookStrategy({
     clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
     callbackURL: "http://hackerchat.me/"
   },
-  function(accessToken, refreshToken, profile, done) {}
+  function(accessToken, refreshToken, profile, done) {
+     global.user = profile;
+  }
 ));
 
 //================================
