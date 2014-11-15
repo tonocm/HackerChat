@@ -15,8 +15,7 @@ router.get('/auth/facebook/callback',
                                       failureRedirect: '/' }));
 
 router.get('/dashboard', function(req, res) {
-	console.log(req.user);
-	res.render('dashboard', {pageData: {title: 'Dashboard', userName: req.user.displayName}});
+	res.render('dashboard', {pageData: {title: 'HackPrinceton', userName: req.user.displayName}});
 });
 
 module.exports = router;
