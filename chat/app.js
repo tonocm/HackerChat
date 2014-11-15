@@ -10,6 +10,8 @@ var TwitterStrategy = require('passport-twitter');
 var GoogleStrategy = require('passport-google');
 var FacebookStrategy = require('passport-facebook');
 
+global.user;
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
