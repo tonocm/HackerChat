@@ -95,11 +95,14 @@ passport.use(new FacebookStrategy({
       success: function(usersPosts) {
         if(usersPosts.length == 0){
           var testObject = new TestObject();
-          testObject.save({fId: profile.id, name: profile.displayName, firstTime: true});
+          testObject.save({fId: profile.id, name: profile.displayName});
           localStorage.setItem("first",1);
+        } else {
+          localStorage.setItem("first",2);
         }
       }
     });
+    console.log(localStorage.setItem("first",2));
     if(localStorage.getItem("first")==1){
       done(null,false);  
     } else {
