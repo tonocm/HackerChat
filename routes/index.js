@@ -13,7 +13,11 @@ router.get('/auth/facebook', passport.authenticate('facebook'));
 
 router.get('/auth/facebook/callback', 
   passport.authenticate('facebook', { successRedirect: '/dashboard',
-                                      failureRedirect: '/' }));
+                                      failureRedirect: '/profile' }));
+
+router.get('/profile', function(req,res) {
+	res.render('profile', {pageData: {title: 'Set Profile'}})
+});
 
 router.get('/dashboard', function(req, res) {
 	var request = require("request");

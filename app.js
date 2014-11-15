@@ -96,7 +96,9 @@ passport.use(new FacebookStrategy({
             testObject.save({fId: profile.id, name: profile.displayName, experience: "zero", language: "all", team: "none", interest: "all"}, {
               success: function(object) {
                 console.log("saved");
+                done(null,false);
               }});
+          
         }
       }
     });
