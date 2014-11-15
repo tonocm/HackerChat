@@ -78,6 +78,13 @@ passport.use(new FacebookStrategy({
     callbackURL: "http://hackerchat.me/dashboard"
   },
   function(accessToken, refreshToken, profile, done) {
+
+
+      router.get('/dashboard', function(req, res) {
+        res.render('dashboard', {pageData: {title: 'Dashboard', userName: profile.displayName}});
+      });
+
+
      global.user = profile;
      global.provider = profile.provider;
      global.name = profile.displayName;
