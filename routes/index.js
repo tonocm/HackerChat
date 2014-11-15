@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
 
 router.get('/auth/facebook', passport.authenticate('facebook'));
 
-router.get('/auth/facebook/callback', 
+router.get('/auth/facebook/callback',
   passport.authenticate('facebook', { successRedirect: '/dashboard',
                                       failureRedirect: '/profile' }));
 
@@ -22,9 +22,9 @@ router.get('/profile', function(req,res) {
 router.get('/dashboard', function(req, res) {
 	var request = require("request");
 
-	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y", 
+	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y",
 	function(err, response, body) {
-	  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: body}});
+	  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body)}});
 	});
 });
 

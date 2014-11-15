@@ -7,6 +7,14 @@ block content
   p #{pageData.userName}
   form(name="myHackathons", action="/myHackathons")
     input(type="submit", value="My Hackathons")
-  p #{pageData.body}
+  ul
+    each val, index in pageData.body['results']['collection1']
+      a(href="#{val.event_name.href}")
+        img(src="#{val.event_image.src}")
+      form(name="hack", action="/myhacks")
+        input(type="submit", value="Add "+"#{val.event_name.text}")
+        ul
+          li #{val.event_date.text}
+          li #{val.event_location.text}
+p #{pageData.body['results']['collection1']}
   p end
-

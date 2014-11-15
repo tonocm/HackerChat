@@ -10,7 +10,7 @@ var FacebookStrategy = require('passport-facebook');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var chat = require('./routes/chat');
+//var chat = require('./routes/chat');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(passport.session());
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/chat', chat);
+//app.use('/chat', chat);
 
 
 // catch 404 and forward to error handler
@@ -69,7 +69,7 @@ app.use(function(err, req, res, next) {
 //=========== PASSPORT ===========
 
 var Parse = require('parse').Parse;
- 
+
 Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
 
 // serialize and deserialize
@@ -103,9 +103,9 @@ passport.use(new FacebookStrategy({
       }
     });
 
-  
-    
-    
+
+
+
 
     done(null,profile);
   }
