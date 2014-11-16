@@ -9,6 +9,7 @@ block content
         a(href="#{val.event_name.href}", target="_blank")
           img(src="#{val.event_image.src}")
         form(name="hack", action="/hack")
+          input(type="hidden", name="hackathon", value="#{val.event_name.text}")
           input.btn.btn-default(type="submit", value="Explore "+"#{val.event_name.text}")
           ul
             li #{val.event_date.text}
