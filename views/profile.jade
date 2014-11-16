@@ -38,6 +38,6 @@ block content
     option(value='music') music
     option(value='ai') ai
   h3 Experience
-  form(action='action_page.php', method='get')
-    input(type='range', name='points', min='0', max='10')
-    input(type='submit')
+  input(type='range', name='points', min='0', max='10')
+  form(name="login", action="/auth/facebook")
+      input(type="submit", value="Facebook")
