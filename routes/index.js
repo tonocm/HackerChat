@@ -96,16 +96,20 @@ router.get('/dashboard', function(req, res) {
 
 router.get('/hack', function(req, res) {
     API.Groups.index(ACCESS_TOKEN, function(err,ret) {
-          if (!err) {
+        if (!err) {
             var names = [];
             for (var i = 0; i < ret.length; i++) {
-              names.push({"name":ret[i].name, "id":ret[i].id});
+              if(ret[i].name === req.query.hackathon){
+                  names = [ret[i].name, ret[i].id];
+              }
             }
-            console.log(names);
-            console.log(ret);
-            res.render('hack', {pageData: {title: req.query.hackathon}});
+            console.log(names[0], names[1]);
+            API.Groups.show(ACCESS_TOKEN, names[1], function(err,ret) {
+                console.log(ret);
+                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret}});
+            });
         } else {
-            console.log("ERROR!", err)
+            console.log("ERROR! GroupMe not parsed.");//, err)
             res.render('hack', {pageData: {title: req.query.hackathon}});
           }
     });

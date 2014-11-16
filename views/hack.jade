@@ -2,5 +2,9 @@ extends layout
 
 block content
   h1 HackerChat
-  h1 #{pageData.title}
-  |<iframe src="http://webchat.freenode.net?randomnick=1&channels=%23hackprinceton&uio=Mj10cnVlJjk9dHJ1ZSYxMT01MSYxMj10cnVl29" width="647" height="400"></iframe>
+  h1 #{pageData.title}: #{pageData.groups.phone_number}
+  a(href="#{pageData.groups.share_url}" target="_blank") Link to Chatroom
+  h2 Members
+  ul
+    each val, index in pageData.groups.members
+      li.hackathon-listing #{val.nickname}
