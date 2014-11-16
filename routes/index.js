@@ -36,7 +36,6 @@ router.get('/contact', function(req, res){
 });
 
 router.get('/saveprofile', function(req,res){
-	console.log(req);
 	var Parse = require('parse').Parse;
 	Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
 	var TestObject = Parse.Object.extend("myUser");
@@ -46,7 +45,6 @@ router.get('/saveprofile', function(req,res){
       success: function(results) {
         query.get(results[0].id, {
         	success: function(foundUser) {
-			  console.log(req.query);
 			  foundUser.set('interest',req.query.interest);
 			  foundUser.set('language',req.query.language);
 			  foundUser.set('industry',req.query.industry);
@@ -55,8 +53,7 @@ router.get('/saveprofile', function(req,res){
 			  foundUser.save();
 			},
 			error: function(object, error) {
-			  // The object was not retrieved successfully.
-			  // error is a Parse.Error with an error code and message.
+			  console.log(error);
 			}
         });
         res.redirect('/auth/facebook');
@@ -79,6 +76,7 @@ router.get('/dashboard', function(req, res) {
     query.equalTo("fId", req.user.id);
     query.find({
       success: function(results) {
+      	console.log(results);
         if(results[0]._serverData.firstTime){
 			query.get(results[0].id, {
 			  success: function(foundUser) {
