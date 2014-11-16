@@ -18,7 +18,6 @@
     "mongoose":"*",
     "hipchat-client":"*",
     "coffee-script":"*",
-    "node-localstorage":"*",
-    "node-curl":"*"
+    "node-localstorage":"*"
   }
 }
