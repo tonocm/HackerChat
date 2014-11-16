@@ -4,6 +4,8 @@ var HipChatClient = require('hipchat-client');
 var hipchat = new HipChatClient('e4a7466d2f67dfb1045c8d60e7efc1');
 var FacebookStrategy = require('passport-facebook');
 var router = express.Router();
+var https = require('https');
+var curl = require('node-curl');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -125,5 +127,20 @@ router.get('/chat', function(req, res){
 	  res.render('chat', {pageData: res2});
 	});
 });
+
+router.get('/findloc', function(req, res) {
+    var key = 'AIzaSyBoA1LZose7Av4cU_MZzBVd2G4F1mbqb_g';
+    var address = 'Princeton University'; //from website 
+    address = escape(address);
+    var geoLocationRequest = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + key;
+
+	var jsonObj = curl(geoLocationRequest, function(err) {
+				    var jObj = JSON.parse(this.body);
+				    console.log(jObj['results'][0].geometry.location);
+				  });
+
+	res.render('index', {pageData: {title: req.query.hackathon}});
+});
+
 
 module.exports = router;
