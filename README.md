@@ -8,7 +8,7 @@
 ####HackerChat allows you to create a great hackathon team, maximizing the opportunity for learning, creating, and communicating.
 
 
-Often times, hackers don't take full advantage the hackathon experience.
+Hackers may not always take full advantage the hackathon experience.
 The root of this problems lies on how the process is normally run:
 - Hackers join a hackathon group, usually on Facebook
 - The hackathon organizers post updates of the event to the group
