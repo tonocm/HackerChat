@@ -3,6 +3,7 @@ var passport = require('passport');
 var HipChatClient = require('hipchat-client');
 var hipchat = new HipChatClient('e4a7466d2f67dfb1045c8d60e7efc1');
 
+var LocalStorage = require('node-localstorage').LocalStorage;
 var FacebookStrategy = require('passport-facebook');
 var router = express.Router();
 
@@ -23,7 +24,7 @@ router.get('/profile', function(req,res) {
 
 router.get('/dashboard', function(req, res) {
 	var request = require("request");
-	
+
 	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y",
 	function(err, response, body) {
 	  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body)}});
