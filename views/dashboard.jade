@@ -1,9 +1,5 @@
 extends layout
 
-block head
-  title= HackerChat
-  h1= HackerChat
-
 block content
   h1 #{pageData.title}
   p #{pageData.userName}
@@ -12,7 +8,7 @@ block content
       li.hackathon-listing
         a(href="#{val.event_name.href}", target="_blank")
           img(src="#{val.event_image.src}")
-        form(name="hack", action="/myhacks")
+        form(name="hack", action="/hack")
           input.btn.btn-default(type="submit", value="Explore "+"#{val.event_name.text}")
           ul
             li #{val.event_date.text}
