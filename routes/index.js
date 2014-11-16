@@ -63,7 +63,6 @@ router.get('/dashboard', function(req, res) {
 	var request = require("request");
 	var Parse = require('parse').Parse;
 	Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
-
 	var TestObject = Parse.Object.extend("myUser");
 	var query = new Parse.Query(TestObject);
     query.equalTo("fId", req.user.id);
@@ -85,7 +84,7 @@ router.get('/dashboard', function(req, res) {
         } else{
         	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y",
 			function(err, response, body) {
-			  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body)}});
+			  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body), pic: req.user._json.picture.data.url}});
 			});
         }
       },
