@@ -25,6 +25,14 @@ router.get('/profile', function(req,res) {
 	res.render('profile', {pageData: {title: 'Set Profile'}})
 });
 
+router.get('/about', function(req, res){
+	res.render('about', {pageData: {title: 'About'}});
+});
+
+router.get('/contact', function(req, res){
+	res.render('contact');
+});
+
 router.get('/saveprofile', function(req,res){
 	console.log(req);
 	var Parse = require('parse').Parse;
@@ -134,5 +142,8 @@ router.get('/chat', function(req, res){
 	  res.render('chat', {pageData: res2});
 	});
 });
+
+
+
 
 module.exports = router;

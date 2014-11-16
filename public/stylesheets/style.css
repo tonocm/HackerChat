@@ -9,6 +9,11 @@ a {
   color: #00B7FF;
 }
 
+.logosheader {
+	font-size: 18px;
+	margin: 22px;
+}
+
 .hackathon-list {
 	text-align: center;
 	margin: auto;
@@ -40,6 +45,18 @@ a {
 		margin: 11px 0 0;
 		font-size: 13px;
 		line-height: 7px;
+}
+
+.contacts li{
+	list-style: none;
+	text-align: center;
+}
+
+.about-copy {
+	margin: 33px auto;
+	text-align: left;
+	width: 600px;
+	padding: 33px;
 }
 
 nav {
@@ -299,6 +316,20 @@ nav {
     position: fixed;
 }
 
+.logos {
+	width: 86.7%;
+	margin: 122px auto;
+}
+
+	.logos img {
+		height: 88px;
+	}
+
+	.logos li {
+		list-style: none;
+		display: inline-block;
+	}
+
 .intro-txt {
     padding: 20px;
     color: #6E2405;
@@ -306,7 +337,6 @@ nav {
 
 .btn-warning {
 	border-radius: 7px;
-	margin: 17px;
 }
 
 .btn-social{position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}

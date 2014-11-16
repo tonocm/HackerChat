@@ -40,7 +40,10 @@ block content
         option(value='music') Music
         option(value='ai') AI
       h3 Experience
-      input(id='experience', type='range', name='points', min='0', max='10')
+      .range
+        input#experience(type='range', name='points', min='0', value='50%', max='10', onchange='rangeInfo.value=value')
+        output#rangeInfo 5
+
       form(name="sendData" action="/saveprofile")
         input(id='t1', type="hidden", name="interest", value="placeholder")
         input(id='t2', type="hidden", name="language", value="placeholder")
