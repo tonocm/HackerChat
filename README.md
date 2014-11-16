@@ -9,14 +9,17 @@
 
 #####The core components of a hackathon are learning, creating, and communicating.
 
-Often times, hackers don't take full advantage this experience due to a lack of different abilities within team members. The root of this problems lies on how the process is normally run:
-- Hackers join a hackathon group (Usually on FaceBook)
+
+
+Often times, hackers don't take full advantage the hackathon experience.
+The root of this problems lies on how the process is normally run:
+- Hackers join a hackathon group (usually on Facebook)
 - The hackathon organizers post updates of the event to the group
 - Hackers express their excitement and sometimes post a vague description of their ideas on the group
-- Due to the nature of the social network (FaceBook) and its personal-friendly athmosphere, it is hard for hackers to find people with a specific skillset or a set of ideas.
-- When hackers make an effort to find teammates with specific qualifications, their posts usually get lost between other social interactions such as the ones mentioned above.
+- Due to the nature of the social network (Facebook) and its personal athmosphere, it is hard for hackers to find people with specific skillsets or a set of ideas.
+- When hackers make an effort to find teammates with specific qualifications, their posts usually get lost within other social interactions, such as the ones mentioned above.
 
-With our current working model, not a single hackathon core component is being maximized. Hackers usually wait until the beginnign of the event to find a team; which usually leads to the formation of a team with a random set of abilities. Inheritely, due to a lack of techinical diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which in turn restricts creativity and overall performance, relative to a well-planned team.
+With this current process, not a single hackathon core component is being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with random sets of abilities. Inheritely, due to a lack of diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which restricts creativity and overall performance, relative to a well-planned team.
 
 Even further, once the event gets started, there is no effective communication mean to exchange thoughts, ideas, and informal conversations within the hackathon.
 
