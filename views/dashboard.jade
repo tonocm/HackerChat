@@ -7,12 +7,13 @@ block content
   p #{pageData.userName}
   ul
     each val, index in pageData.body['results']['collection1']
-      a(href="#{val.event_name.href}")
-        img(src="#{val.event_image.src}")
-      form(name="hack", action="/myhacks")
-        input(type="submit", value="Check "+"#{val.event_name.text}")
-        ul
-          li #{val.event_date.text}
-          li #{val.event_location.text}
+      li.hackathon-listing
+        a(href="#{val.event_name.href}")
+          img(src="#{val.event_image.src}")
+        form(name="hack", action="/myhacks")
+          input(type="submit", value="Check "+"#{val.event_name.text}")
+          ul
+            li #{val.event_date.text}
+            li #{val.event_location.text}
   //p #{pageData.body['results']['collection1']}
   p end

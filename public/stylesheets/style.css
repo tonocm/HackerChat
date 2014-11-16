@@ -14,6 +14,19 @@ body {
 	background-color: rgb(220, 220, 220);
 }
 
+.hackathon-listing{
+	background: white;
+	box-shadow: 3px 3px 17px rgba(0,0,0,0.1);
+	display: inline-block;
+	float: left;
+	padding: 33px;
+	margin: 77px;
+}
+	.hackathon-listing img{
+		margin: auto auto 23px;
+		display: block;
+	}
+
 .event-list {
 	list-style: none;
 	font-family: 'Lato', sans-serif;
