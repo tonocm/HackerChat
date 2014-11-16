@@ -8,7 +8,7 @@ var session = require('express-session');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
 var LocalStorage = require('node-localstorage').LocalStorage;
-  localStorage = new LocalStorage('./scratch');
+localStorage = new LocalStorage('./scratch');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -104,11 +104,11 @@ passport.use(new FacebookStrategy({
     });
     console.log(localStorage.setItem("first",2));
     if(localStorage.getItem("first")==1){
-      done(null,false);  
+      done(null,false);
     } else {
       done(null,profile);
     }
-    
+
   }
 ));
 
