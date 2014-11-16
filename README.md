@@ -4,10 +4,8 @@
 #####us@hackerchat.me
 
 
-####We are looking to maximize everyone's hackathon's experience.
 
-
-#####The core components of a hackathon are learning, creating, and communicating.
+####HackerChat allows you to create a great hackathon team, maximize the opportunity for learning, creating, and communicating.
 
 
 
