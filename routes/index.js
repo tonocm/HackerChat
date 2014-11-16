@@ -142,18 +142,14 @@ router.get('/hack', function(req, res) {
 			                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret, bestMatch: people}});
 			            });
 			        }
-        	},
-        	error: function(error) {
-        		console.log(error);
+			    });
         	}
         });
       },
-      error: function(error) {
-        console.log(error);
-      }
-    });
-
-	
+    error: function(error) {
+      console.log(error);
+    }
+  });
 });
 
 router.get('/chat', function(req, res){
