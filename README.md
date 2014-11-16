@@ -16,11 +16,11 @@ The root of this problems lies on how the process is normally run:
 - Due to the nature of the social networks, it is hard for hackers to find people with specific skillsets or a set of ideas.
 - When hackers make an effort to find teammates with specific qualifications, their posts usually get lost within other social interactions, such as the ones mentioned above.
 
-With this current process, none of the core components of a hackathon, learning, creating, and communicating are being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with random sets of abilities. Inheritely, due to a lack of diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which restricts creativity and overall performance, relative to a well-planned team.
+With this current process, none of the core components of a hackathon, learning, creating, and communicating are being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with a random set of abilities. Inheritely, due to a lack of technological diversity, there exists a limitation on the  for learning. This restricts creativity and overall performance, relative to a well-planned team.
 
-Furthermore, once the event gets started, there is no effective communication medium to exchange thoughts, ideas, and informal conversations within the hackathon.
+Furthermore, once the event gets started, there is no effective communication medium to exchange thoughts, ideas, and informal conversations.
 
-The most natrural solution is to provide a service that includes a standard communication platform and a teammate matchmaking service based on the abilities a person can provide, and those he or she is looking for.
+Our solution is to provide a service that includes a standard communication platform and a teammate matchmaking service based on the abilities a person can provide, and those he or she needs.
 
 #####HackerChat allows for the original purpose of hackatons to be accomplished.
 
