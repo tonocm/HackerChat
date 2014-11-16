@@ -95,11 +95,17 @@ router.get('/dashboard', function(req, res) {
 });
 
 router.get('/hack', function(req, res) {
-    API.Users.me(ACCESS_TOKEN, function(err,ret) {
+    API.Groups.index(ACCESS_TOKEN, function(err,ret) {
           if (!err) {
-            console.log("Your user id is", ret.id, "and your name is", ret.name);
+            var names = [];
+            for (var i = 0; i < ret.length; i++) {
+              names.push({"name":ret[i].name, "id":ret[i].id});
+            }
+            console.log(names);
+            console.log(ret);
             res.render('hack', {pageData: {title: req.query.hackathon}});
         } else {
+            console.log("ERROR!", err)
             res.render('hack', {pageData: {title: req.query.hackathon}});
           }
     });
