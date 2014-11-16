@@ -1,0 +1,6 @@
+extends layout
+
+block content
+	ul
+		each val in pageData['rooms']
+			li= val['room_id']
