@@ -45,6 +45,34 @@ nav {
 	text-align: center;
 }
 
+    .user {
+    	position: fixed;
+        right: 22px;
+    }
+
+	.avatar {
+		border-radius: 90px;
+		width: 55px;
+		text-align: right;
+		float: right;
+        margin: -12.5px 0 0 11px;
+	}
+
+	nav p {
+		margin: 0 0 10px;
+		text-align: right;
+		font-size: 14px;
+	}
+
+	nav li {
+		list-style: none;
+	}
+
+	nav ul {
+		margin: auto;
+		padding: 0;
+	}
+
 .set-profile {
 	background: white;
 	box-shadow: 3px 3px 17px rgba(0,0,0,0.1);
@@ -56,6 +84,8 @@ nav {
 .logo {
 	width: 188px;
 	background-color: white;
+	border-top-left-radius: 7px;
+	border-bottom-left-radius: 7px;
 }
 
 .facebook-login {

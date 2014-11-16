@@ -2,7 +2,6 @@ extends layout
 
 block content
   h1 #{pageData.title}
-  p #{pageData.userName}
   ul.hackathon-list
     each val, index in pageData.body['results']['collection1']
       li.hackathon-listing
