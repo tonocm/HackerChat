@@ -13,10 +13,10 @@
 
 Often times, hackers don't take full advantage the hackathon experience.
 The root of this problems lies on how the process is normally run:
-- Hackers join a hackathon group (usually on Facebook)
+- Hackers join a hackathon group, usually on Facebook
 - The hackathon organizers post updates of the event to the group
 - Hackers express their excitement and sometimes post a vague description of their ideas on the group
-- Due to the nature of the social network (Facebook) and its personal athmosphere, it is hard for hackers to find people with specific skillsets or a set of ideas.
+- Due to the nature of the social network, Facebook, and its personal athmosphere, it is hard for hackers to find people with specific skillsets or a set of ideas.
 - When hackers make an effort to find teammates with specific qualifications, their posts usually get lost within other social interactions, such as the ones mentioned above.
 
 With this current process, not a single hackathon core component is being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with random sets of abilities. Inheritely, due to a lack of diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which restricts creativity and overall performance, relative to a well-planned team.
@@ -27,7 +27,7 @@ The most natrural solution is to provide a service that includes a standard comm
 
 #####HackerChat allows for the original purpose of hackatons to be accomplished.
 
-It enables users to access the service with easy authentication, it automatically provides team members suggestions through a **complementary-ability matching algorithm**, and it enables instant messaging based on a person's current location.
+It enables users to access the service with easy authentication, automatically provides team members suggestions through a **complementary-ability matching algorithm**, and enables instant messaging based on a person's current location.
 
 This permits all hackers to communicate freely in a chat room, without the need to trade their personal information and find people with complementary abilities, maximizing their team's potential.
 
