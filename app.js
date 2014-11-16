@@ -134,7 +134,7 @@ passport.use(new FacebookStrategy({
         if(number == 0){
           var testObject = new TestObject();
           testObject.save({fId: profile.id, name: profile.displayName, firstTime: true});
-        }3
+        }
         done(null,profile);
       },
       error: function(error) {
