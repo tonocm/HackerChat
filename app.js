@@ -8,13 +8,48 @@ var session = require('express-session');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
 var LocalStorage = require('node-localstorage').LocalStorage;
-  localStorage = new LocalStorage('./scratch');
+localStorage = new LocalStorage('./scratch');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-//var chat = require('./routes/chat');
 
 var app = express();
+
+/* PLUGGING IN MONGO WITH MONGOOSE
+var mongoose = require('mongoose');
+
+var db = mongoose.connection;
+
+db.on('error', console.error);
+db.once('open', function() {
+  // Create your schemas and models here.
+});
+
+mongoose.connect('mongodb://localhost/test');
+
+var Schema = mongoose.Schema;
+
+var blogSchema = new Schema({
+  title:  String,
+  author: String,
+  body:   String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs:  Number
+  }
+});
+
+var Blog = mongoose.model('blog', blogSchema);
+
+var b =  new Blog({title:"My Blog!"});
+b.save(function(err, saved){
+
+  console.log(saved);
+
+})*/
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -95,6 +130,7 @@ passport.use(new FacebookStrategy({
       success: function(usersPosts) {
         if(usersPosts.length == 0){
           var testObject = new TestObject();
+
           testObject.save({fId: profile.id, name: profile.displayName});
           localStorage.setItem("first",1);
         } else {
@@ -102,18 +138,22 @@ passport.use(new FacebookStrategy({
         }
       }
     });
-    console.log(localStorage.setItem("first",2));
+    console.log(localStorage.getItem("first",2));
     if(localStorage.getItem("first")==1){
-      done(null,false);  
+      done(null,false);
     } else {
       done(null,profile);
     }
-    
+
   }
 ));
 
+//=========== CHAT ROOM ===========
+
+var HipChatClient = require('hipchat-client');
+
+var hipchat = new HipChatClient('e4a7466d2f67dfb1045c8d60e7efc1');
 
 //================================
-
 
 module.exports = app;
