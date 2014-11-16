@@ -10,10 +10,10 @@
 
 Hackers may not always take full advantage the hackathon experience.
 The root of this problems lies on how the process is normally run:
-- Hackers join a hackathon group, usually on Facebook
-- The hackathon organizers post updates of the event to the group
+- Hackers join a social media group, usually on Facebook
+- Organizers post updates of the event to the group
 - Hackers express their excitement and sometimes post a vague description of their ideas on the group
-- Due to the nature of the social network, Facebook, and its personal athmosphere, it is hard for hackers to find people with specific skillsets or a set of ideas.
+- Due to the nature of the social networks, it is hard for hackers to find people with specific skillsets or a set of ideas.
 - When hackers make an effort to find teammates with specific qualifications, their posts usually get lost within other social interactions, such as the ones mentioned above.
 
 With this current process, not a single hackathon core component is being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with random sets of abilities. Inheritely, due to a lack of diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which restricts creativity and overall performance, relative to a well-planned team.
