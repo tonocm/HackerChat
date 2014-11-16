@@ -13,7 +13,7 @@
 
 Often times, hackers don't take full advantage the hackathon experience.
 The root of this problems lies on how the process is normally run:
-- Hackers join a hackathon group (Usually on FaceBook)
+- Hackers join a hackathon group (usually on Facebook)
 - The hackathon organizers post updates of the event to the group
 - Hackers express their excitement and sometimes post a vague description of their ideas on the group
 - Due to the nature of the social network (FaceBook) and its personal-friendly athmosphere, it is hard for hackers to find people with a specific skillset or a set of ideas.
