@@ -7,6 +7,10 @@ var router = express.Router();
 var https = require('https');
 var curl = require('node-curl');
 
+//groupme for the lolz.
+var API = require('groupme').Stateless
+const ACCESS_TOKEN = "eb57d1304f9301326e4e4a62284ce1cf";
+
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { pageData: {title: 'HackerChat'}});
@@ -54,14 +58,13 @@ router.get('/saveprofile', function(req,res){
     });
 	//var string = encodeURIComponent(JSON.stringify(req.query));
 	//console.log(req.user.id)
-	
+
 })
 
 router.get('/dashboard', function(req, res) {
 	var request = require("request");
 	var Parse = require('parse').Parse;
 	Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
-
 	var TestObject = Parse.Object.extend("myUser");
 	var query = new Parse.Query(TestObject);
     query.equalTo("fId", req.user.id);
@@ -83,7 +86,7 @@ router.get('/dashboard', function(req, res) {
         } else{
         	request("https://www.kimonolabs.com/api/audifm3o?apikey=fri4pwNK0GT19RPNI7L1lJ8FjvrAI50Y",
 			function(err, response, body) {
-			  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body)}});
+			  res.render('dashboard', {pageData: {title: 'Select a Hackathon', userName: req.user.displayName, body: JSON.parse(body), pic: req.user._json.picture.data.url}});
 			});
         }
       },
@@ -94,8 +97,14 @@ router.get('/dashboard', function(req, res) {
 });
 
 router.get('/hack', function(req, res) {
-    console.log(req);
-	res.render('hack', {pageData: {title: req.query.hackathon}});
+    API.Users.me(ACCESS_TOKEN, function(err,ret) {
+          if (!err) {
+            console.log("Your user id is", ret.id, "and your name is", ret.name);
+            res.render('hack', {pageData: {title: req.query.hackathon}});
+        } else {
+            res.render('hack', {pageData: {title: req.query.hackathon}});
+          }
+    });
 });
 
 router.get('/chat', function(req, res){

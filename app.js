@@ -11,6 +11,10 @@ var FacebookStrategy = require('passport-facebook');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+//groupme for the lolz.
+var API = require('groupme').Stateless
+const ACCESS_TOKEN = "eb57d1304f9301326e4e4a62284ce1cf";
+
 var app = express();
 
 /* PLUGGING IN MONGO WITH MONGOOSE
@@ -118,7 +122,8 @@ done(null, obj);
 passport.use(new FacebookStrategy({
     clientID: 829243480452780,
     clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
-    callbackURL: "/auth/facebook/callback"
+    callbackURL: "/auth/facebook/callback",
+    profileFields: ['id', 'displayName', 'picture']
   },
   function(accessToken, refreshToken, profile, done) {
     var TestObject = Parse.Object.extend("myUser");
@@ -126,11 +131,10 @@ passport.use(new FacebookStrategy({
     query.equalTo("fId", profile.id);
     query.count({
       success: function(number) {
-        console.log(number)
         if(number == 0){
           var testObject = new TestObject();
           testObject.save({fId: profile.id, name: profile.displayName, firstTime: true});
-        }
+        }3
         done(null,profile);
       },
       error: function(error) {
