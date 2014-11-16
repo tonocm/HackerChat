@@ -15,5 +15,5 @@ block content
         form(name="hack", action="/myhacks")
           input.btn.btn-default(type="submit", value="Check "+"#{val.event_name.text}")
           ul
-            p #{val.event_date.text}
-            p #{val.event_location.text}
+            li #{val.event_date.text}
+            li #{val.event_location.text}
