@@ -9,7 +9,10 @@
 
 #####The core components of a hackathon are learning, creating, and communicating.
 
-Often times, hackers don't take full advantage this experience due to a lack of different abilities within team members. The root of this problems lies on how the process is normally run:
+
+
+Often times, hackers don't take full advantage the hackathon experience.
+The root of this problems lies on how the process is normally run:
 - Hackers join a hackathon group (Usually on FaceBook)
 - The hackathon organizers post updates of the event to the group
 - Hackers express their excitement and sometimes post a vague description of their ideas on the group
