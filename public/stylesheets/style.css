@@ -1,11 +1,18 @@
 body {
   padding: 50px;
   text-align: center;
+  background-color: #CCCCCC;
   font: 18px "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.hackathon-list {
+	text-align: center;
+	margin: auto;
+	width: 86.7%;
 }
 
 .hackathon-listing{
@@ -14,12 +21,25 @@ a {
 	display: inline-block;
 	float: left;
 	padding: 33px;
-	margin: 77px;
+	margin: 44px;
+	width: 222px;
 }
 	.hackathon-listing img{
 		margin: auto auto 23px;
 		display: block;
 	}
+
+	.hackathon-listing ul{
+		padding: 0;
+	}
+
+	.hackathon-listing li{
+		list-style: none;
+		text-align: center;
+		margin: 11px 0 0;
+		font-size: 13px;
+		line-height: 7px;
+}
 
 nav {
 	text-align: center;
@@ -27,6 +47,7 @@ nav {
 
 .logo {
 	width: 188px;
+	background-color: white;
 }
 
 .facebook-login {
