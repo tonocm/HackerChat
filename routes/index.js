@@ -5,6 +5,10 @@ var hipchat = new HipChatClient('e4a7466d2f67dfb1045c8d60e7efc1');
 var FacebookStrategy = require('passport-facebook');
 var router = express.Router();
 
+//groupme for the lolz.
+var API = require('groupme').Stateless
+const ACCESS_TOKEN = "eb57d1304f9301326e4e4a62284ce1cf";
+
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('index', { pageData: {title: 'HackerChat'}});
@@ -52,7 +56,7 @@ router.get('/saveprofile', function(req,res){
     });
 	//var string = encodeURIComponent(JSON.stringify(req.query));
 	//console.log(req.user.id)
-	
+
 })
 
 router.get('/dashboard', function(req, res) {
@@ -92,8 +96,14 @@ router.get('/dashboard', function(req, res) {
 });
 
 router.get('/hack', function(req, res) {
-    console.log(req);
-	res.render('hack', {pageData: {title: req.query.hackathon}});
+    API.Users.me(ACCESS_TOKEN, function(err,ret) {
+          if (!err) {
+            console.log("Your user id is", ret.id, "and your name is", ret.name);
+            res.render('hack', {pageData: {title: req.query.hackathon}});
+        } else {
+            res.render('hack', {pageData: {title: req.query.hackathon}});
+          }
+    });
 });
 
 router.get('/chat', function(req, res){
