@@ -5,7 +5,7 @@
 
 
 
-####HackerChat allows you to create a great hackathon team, maximizing the opportunity for learning, creating, and communicating.
+####HackerChat allows you to create a great hackathon team, maximizing the opportunity for learning, communicating, and hacking!
 
 
 Hackers may not always take full advantage the hackathon experience.
