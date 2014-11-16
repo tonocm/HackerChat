@@ -43,6 +43,7 @@ router.get('/saveprofile', function(req,res){
 			  foundUser.set('language',req.query.language);
 			  foundUser.set('industry',req.query.industry);
 			  foundUser.set('experience',req.query.experience);
+			  foundUser.set('team',req.query.team);
 			  foundUser.save();
 			},
 			error: function(object, error) {
@@ -97,24 +98,62 @@ router.get('/dashboard', function(req, res) {
 });
 
 router.get('/hack', function(req, res) {
-    API.Groups.index(ACCESS_TOKEN, function(err,ret) {
-        if (!err) {
-            var names = [];
-            for (var i = 0; i < ret.length; i++) {
-              if(ret[i].name === req.query.hackathon){
-                  names = [ret[i].name, ret[i].id];
-              }
-            }
-            console.log(names[0], names[1]);
-            API.Groups.show(ACCESS_TOKEN, names[1], function(err,ret) {
-                console.log(ret);
-                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret}});
-            });
-        } else {
-            console.log("ERROR! GroupMe not parsed.");//, err)
-            res.render('hack', {pageData: {title: req.query.hackathon}});
-          }
+    var PriorityQueue = require('priorityqueuejs');
+    var queue = new PriorityQueue(function(a, b) {
+	  return a.cash - b.cash;
+	});
+	var Parse = require('parse').Parse;
+	Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
+	var TestObject = Parse.Object.extend("myUser");
+	var query = new Parse.Query(TestObject);
+	var query2 = new Parse.Query(TestObject);
+    query.equalTo("fId", req.user.id);
+    query.find({
+      success: function(results) {
+        query2.equalTo("interest",results[0]._serverData.team);
+        //query2.ascending("experience");
+        query2.find({
+        	success: function(results2) {
+        		//console.log(results);
+        		for(var i = 0; i < results2.length; i++){
+        			queue.enq({ cash: -1*Math.abs(parseInt(results2[i]._serverData.experience) + parseInt(results[0]._serverData.experience) - 10), name: results2[i]._serverData.name });
+        		}
+        		var people = [];
+        		var temp;
+        		while(queue.size() > 0){
+        			temp = queue.deq();
+        			temp.cash = Math.round((temp.cash+10)*(100/9));
+        			people.push(temp);
+        		}
+        		//people = JSON.stringify(people);
+        		//console.log(people);
+
+				API.Groups.index(ACCESS_TOKEN, function(err,ret) {
+			        if (!err) {
+			            var names = [];
+			            for (var i = 0; i < ret.length; i++) {
+			              if(ret[i].name === req.query.hackathon){
+			                  names = [ret[i].name, ret[i].id];
+			              }
+			            }
+			            console.log(names[0], names[1]);
+			            API.Groups.show(ACCESS_TOKEN, names[1], function(err,ret) {
+			                console.log(ret);
+			                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret, bestMatch: people}});
+			            });
+			        }
+        	},
+        	error: function(error) {
+        		console.log(error);
+        	}
+        });
+      },
+      error: function(error) {
+        console.log(error);
+      }
     });
+
+	
 });
 
 router.get('/chat', function(req, res){

@@ -41,9 +41,18 @@ block content
         option(value='ai') AI
       h3 Experience
       input(id='experience', type='range', name='points', min='0', max='10')
+      h3 Looking for teammates good at
+      select#team
+        option(value='software') software
+        option(value='hardware') hardware
+        option(value='frontend') frontend
+        option(value='backend') backend
+        option(value='design') design
       form(name="sendData" action="/saveprofile")
         input(id='t1', type="hidden", name="interest", value="placeholder")
         input(id='t2', type="hidden", name="language", value="placeholder")
         input(id='t3', type="hidden", name="industry", value="placeholder")
         input(id='t4', type="hidden", name="experience", value="placeholder")
+        input(id='t5', type="hidden", name="team", value="placeholder")
         button.btn.btn-warning(onclick='saveData()', type='submit') Save
+        
