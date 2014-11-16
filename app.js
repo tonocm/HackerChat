@@ -7,11 +7,13 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
-var LocalStorage = require('node-localstorage').LocalStorage;
-localStorage = new LocalStorage('./scratch');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+
+//groupme for the lolz.
+var API = require('groupme').Stateless
+const ACCESS_TOKEN = "eb57d1304f9301326e4e4a62284ce1cf";
 
 var app = express();
 
@@ -120,31 +122,25 @@ done(null, obj);
 passport.use(new FacebookStrategy({
     clientID: 829243480452780,
     clientSecret: "dacd90a2b422b99a8051e5f6c52e76b6",
-    callbackURL: "/auth/facebook/callback"
+    callbackURL: "/auth/facebook/callback",
+    profileFields: ['id', 'displayName', 'picture']
   },
   function(accessToken, refreshToken, profile, done) {
     var TestObject = Parse.Object.extend("myUser");
     var query = new Parse.Query(TestObject);
     query.equalTo("fId", profile.id);
-    query.find({
-      success: function(usersPosts) {
-        if(usersPosts.length == 0){
+    query.count({
+      success: function(number) {
+        if(number == 0){
           var testObject = new TestObject();
-
-          testObject.save({fId: profile.id, name: profile.displayName});
-          localStorage.setItem("first",1);
-        } else {
-          localStorage.setItem("first",2);
-        }
+          testObject.save({fId: profile.id, name: profile.displayName, firstTime: true});
+        }3
+        done(null,profile);
+      },
+      error: function(error) {
+        console.log(error);
       }
     });
-    console.log(localStorage.getItem("first",2));
-    if(localStorage.getItem("first")==1){
-      done(null,false);
-    } else {
-      done(null,profile);
-    }
-
   }
 ));
 
