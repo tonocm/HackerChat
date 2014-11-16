@@ -1,17 +1,19 @@
 extends layout
 
-block content
+block head
   title= HackerChat
   h1= HackerChat
+
+block content
   h1 #{pageData.title}
   p #{pageData.userName}
   ul
     each val, index in pageData.body['results']['collection1']
       li.hackathon-listing
-        a(href="#{val.event_name.href}")
+        a(href="#{val.event_name.href}", target="_blank")
           img(src="#{val.event_image.src}")
         form(name="hack", action="/myhacks")
           input(type="submit", value="Check "+"#{val.event_name.text}")
           ul
-            li #{val.event_date.text}
-            li #{val.event_location.text}
+            p #{val.event_date.text}
+            p #{val.event_location.text}
