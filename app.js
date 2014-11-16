@@ -7,8 +7,6 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var passport = require('passport');
 var FacebookStrategy = require('passport-facebook');
-var LocalStorage = require('node-localstorage').LocalStorage;
-localStorage = new LocalStorage('./scratch');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -126,25 +124,19 @@ passport.use(new FacebookStrategy({
     var TestObject = Parse.Object.extend("myUser");
     var query = new Parse.Query(TestObject);
     query.equalTo("fId", profile.id);
-    query.find({
-      success: function(usersPosts) {
-        if(usersPosts.length == 0){
+    query.count({
+      success: function(number) {
+        console.log(number)
+        if(number == 0){
           var testObject = new TestObject();
-
-          testObject.save({fId: profile.id, name: profile.displayName});
-          localStorage.setItem("first",1);
-        } else {
-          localStorage.setItem("first",2);
+          testObject.save({fId: profile.id, name: profile.displayName, firstTime: true});
         }
+        done(null,profile);
+      },
+      error: function(error) {
+        console.log(error);
       }
     });
-    console.log(localStorage.getItem("first",2));
-    if(localStorage.getItem("first")==1){
-      done(null,false);
-    } else {
-      done(null,profile);
-    }
-
   }
 ));
 
