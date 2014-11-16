@@ -1,26 +1,61 @@
 0 info it worked if it ends with ok
+<<<<<<< HEAD
 1 verbose cli [ 'node', '/usr/local/bin/npm', 'start' ]
+2 info using npm@2.1.5
+3 info using node@v0.10.33
+4 verbose node symlink /usr/local/bin/node
+=======
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info prestart HackerChat@0.0.1
-6 info start HackerChat@0.0.1
-7 verbose unsafe-perm in lifecycle true
-8 info HackerChat@0.0.1 Failed to exec start script
-9 error HackerChat@0.0.1 start: `node ./bin/www`
-9 error Exit status 8
-10 error Failed at the HackerChat@0.0.1 start script.
-10 error This is most likely a problem with the HackerChat package,
-10 error not with npm itself.
-10 error Tell the author that this fails on your system:
-10 error     node ./bin/www
-10 error You can get their info via:
-10 error     npm owner ls HackerChat
-10 error There is likely additional logging output above.
-11 error System Darwin 13.4.0
-12 error command "node" "/usr/local/bin/npm" "start"
-13 error cwd /Users/Anonymous/Desktop/Code/HackerChat/HackerChat
-14 error node -v v0.10.33
-15 error npm -v 1.4.28
-16 error code ELIFECYCLE
-17 verbose exit [ 1, true ]
+4 verbose node symlink /usr/bin/node
+>>>>>>> 1960388faa9c532fc480db9adf626f136e120dd9
+5 verbose run-script [ 'prestart', 'start', 'poststart' ]
+6 info prestart HackerChat@0.0.1
+7 info start HackerChat@0.0.1
+8 verbose unsafe-perm in lifecycle true
+9 info HackerChat@0.0.1 Failed to exec start script
+<<<<<<< HEAD
+10 verbose stack Error: HackerChat@0.0.1 start: `node ./bin/www`
+10 verbose stack Exit status 8
+10 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:212:16)
+10 verbose stack     at ChildProcess.emit (events.js:98:17)
+10 verbose stack     at maybeClose (child_process.js:756:16)
+10 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:823:5)
+11 verbose pkgid HackerChat@0.0.1
+12 verbose cwd /Users/jeremywrnr/GitHub/hackerchat
+13 error Darwin 14.0.0
+14 error argv "node" "/usr/local/bin/npm" "start"
+15 error node v0.10.33
+16 error npm  v2.1.5
+17 error code ELIFECYCLE
+18 error HackerChat@0.0.1 start: `node ./bin/www`
+18 error Exit status 8
+19 error Failed at the HackerChat@0.0.1 start script.
+19 error This is most likely a problem with the HackerChat package,
+19 error not with npm itself.
+19 error Tell the author that this fails on your system:
+19 error     node ./bin/www
+19 error You can get their info via:
+19 error     npm owner ls HackerChat
+19 error There is likely additional logging output above.
+20 verbose exit [ 1, true ]
+=======
+10 error HackerChat@0.0.1 start: `node ./bin/www`
+10 error Exit status 8
+11 error Failed at the HackerChat@0.0.1 start script.
+11 error This is most likely a problem with the HackerChat package,
+11 error not with npm itself.
+11 error Tell the author that this fails on your system:
+11 error     node ./bin/www
+11 error You can get their info via:
+11 error     npm owner ls HackerChat
+11 error There is likely additional logging output above.
+12 error System Linux 3.8.11
+13 error command "/usr/bin/node" "/usr/bin/npm" "start"
+14 error cwd /home/mikeumus/Downloads/HackerChat
+15 error node -v v0.10.33
+16 error npm -v 1.4.28
+17 error code ELIFECYCLE
+18 verbose exit [ 1, true ]
+>>>>>>> 1960388faa9c532fc480db9adf626f136e120dd9
