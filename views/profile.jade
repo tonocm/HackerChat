@@ -43,7 +43,15 @@ block content
       .range
         input#experience(type='range', name='points', min='0', value='50%', max='10', onchange='rangeInfo.value=value')
         output#rangeInfo 5
-
+      select#team
+        option(value='health') Health
+        option(value='education') Education
+        option(value='finance') Finance
+        option(value='gaming') Gaming
+        option(value='tech') Tech
+        option(value='urban') Urban
+        option(value='music') Music
+        option(value='ai') AI
       form(name="sendData" action="/saveprofile")
         input(id='t1', type="hidden", name="interest", value="placeholder")
         input(id='t2', type="hidden", name="language", value="placeholder")
