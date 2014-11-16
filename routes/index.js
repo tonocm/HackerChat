@@ -32,6 +32,7 @@ router.get('/dashboard', function(req, res) {
 });
 
 router.get('/hack', function(req, res) {
+    console.log(req);
 	res.render('hack', {pageData: {title: req.query.hackathon}});
 });
 
