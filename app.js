@@ -12,7 +12,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 //groupme for the lolz.
-var API = require('groupme').Stateless
+var API = require('groupme').Stateless;
 const ACCESS_TOKEN = "eb57d1304f9301326e4e4a62284ce1cf";
 
 var app = express();
