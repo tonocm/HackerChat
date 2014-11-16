@@ -5,16 +5,14 @@ block content
   h1= HackerChat
   h1 #{pageData.title}
   p #{pageData.userName}
-  form(name="myHackathons", action="/myHackathons")
-    input(type="submit", value="My Hackathons")
   ul
     each val, index in pageData.body['results']['collection1']
       a(href="#{val.event_name.href}")
         img(src="#{val.event_image.src}")
       form(name="hack", action="/myhacks")
-        input(type="submit", value="Add "+"#{val.event_name.text}")
+        input(type="submit", value="Check "+"#{val.event_name.text}")
         ul
           li #{val.event_date.text}
           li #{val.event_location.text}
-p #{pageData.body['results']['collection1']}
+  //p #{pageData.body['results']['collection1']}
   p end
