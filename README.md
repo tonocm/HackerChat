@@ -21,9 +21,9 @@ The root of this problems lies on how the process is normally run:
 
 With this current process, not a single hackathon core component is being maximized. Hackers usually wait until the beginning of the event to find a team; which usually leads to the formation of a team with random sets of abilities. Inheritely, due to a lack of diversity, there exists a limitation on the learning opportunity a hackaton strives to provide. Which restricts creativity and overall performance, relative to a well-planned team.
 
-Even further, once the event gets started, there is no effective communication mean to exchange thoughts, ideas, and informal conversations within the hackathon.
+Furthermore, once the event gets started, there is no effective communication medium to exchange thoughts, ideas, and informal conversations within the hackathon.
 
-The most natrural solution is to provide a service that includes a standard communication platform and a teammate matchmaking service based on the abilities a person can provide, and those he/she is looking for.
+The most natrural solution is to provide a service that includes a standard communication platform and a teammate matchmaking service based on the abilities a person can provide, and those he or she is looking for.
 
 #####HackerChat allows for the original purpose of hackatons to be accomplished.
 
