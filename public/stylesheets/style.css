@@ -55,7 +55,7 @@ a {
 .about-copy {
 	margin: 33px auto;
 	text-align: left;
-	width: 600px;
+	width: 600px !important;
 	padding: 33px;
 }
 
@@ -311,9 +311,13 @@ nav {
 .menu-open-icon {
     cursor: pointer;
     color: #777;
-    padding: 20px 30px;
     padding: 20px 25px;
     position: fixed;
+}
+
+.menu-toggle {
+	left: -66px !important;
+	top: -66px !important;
 }
 
 .logos {
@@ -355,4 +359,34 @@ footer {
 	margin: 77px auto 13px;
 	font-size: 14px;
 	clear: both;
+}
+
+.about-copy-toggle {
+	width: 300px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 321px) 
+and (max-device-width : 480px) {
+
+	.menu-open-icon {
+		padding: 20px 30px;
+		position: fixed;
+		display: block !important;
+		margin: 0 0 0 240px !important;
+	}
+
+	.set-profile {
+		width: 95%;
+	}
+
+	.menu-mobile {
+		left: 0px;
+		top: 0px;
+	}
+
+	.menu-open-icon {
+		margin: 0 !important;
+	}
 }
