@@ -14,7 +14,7 @@ block content
         option(value='backend') Backend
         option(value='design') Design
       h3 Language
-      select
+      select#language
         option(value='c') C
         option(value='c++') C++
         option(value='csharp') C#
@@ -30,7 +30,7 @@ block content
         option(value='html') HTML
         option(value='nodejs') Node.js
       h3 Industry
-      select
+      select#industry
         option(value='health') Health
         option(value='education') Education
         option(value='finance') Finance
@@ -40,11 +40,10 @@ block content
         option(value='music') Music
         option(value='ai') AI
       h3 Experience
-      .range
-        input(type='range', name='points', min='0', value='50%', max='10', onchange='rangeInfo.value=value')
-        output#rangeInfo 5
-
-      input.btn-warning.btn(type='submit')
-
-    form(name="login", action="/auth/facebook")
-        input(type="submit", value="Facebook")
+      input(id='experience', type='range', name='points', min='0', max='10')
+      form(name="sendData" action="/saveprofile")
+        input(id='t1', type="hidden", name="interest", value="placeholder")
+        input(id='t2', type="hidden", name="language", value="placeholder")
+        input(id='t3', type="hidden", name="industry", value="placeholder")
+        input(id='t4', type="hidden", name="experience", value="placeholder")
+        button.btn.btn-warning(onclick='saveData()', type='submit') Save

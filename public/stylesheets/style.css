@@ -24,6 +24,7 @@ a {
 	margin: 44px;
 	width: 222px;
 }
+
 	.hackathon-listing img{
 		margin: auto auto 23px;
 		display: block;
@@ -198,12 +199,15 @@ nav {
 .range.range-primary input[type="range"]::-webkit-slider-thumb {
     background-color: rgb(66, 139, 202);
 }
+
 .range.range-primary input[type="range"]::-moz-slider-thumb {
     background-color: rgb(66, 139, 202);
 }
+
 .range.range-primary output {
     background-color: rgb(66, 139, 202);
 }
+
 .range.range-primary input[type="range"] {
     outline-color: rgb(66, 139, 202);
 }
@@ -211,16 +215,99 @@ nav {
 .range.range-info input[type="range"]::-webkit-slider-thumb {
     background-color: rgb(91, 192, 222);
 }
+
 .range.range-info input[type="range"]::-moz-slider-thumb {
     background-color: rgb(91, 192, 222);
 }
+
 .range.range-info output {
     background-color: rgb(91, 192, 222);
 }
+
 .range.range-info input[type="range"] {
     outline-color: rgb(91, 192, 222);
 }
 
+.p-set{
+    padding-top: 120px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+}
+.hr-set {
+    border-top: 1px solid rgba(0, 0, 0, 0)!important;
+    margin-bottom: 20px;
+}
+
+.hr-set-two {
+    border-top: 1px solid rgba(0, 0, 0, 0.05)!important;
+    margin-bottom: 5px;
+}
+
+#side-menu {
+    height: 100%;
+    position: fixed;
+    top: -1000px;
+    left: -250px;
+    background-color: #fff;
+    color: #fff;
+    z-index: 999;
+    overflow: auto;
+    max-width: 350px;
+	box-shadow: 3px 3px 17px rgba(0,0,0,0.1);
+}
+
+ #side-menu ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+        #side-menu ul li {
+          border-bottom: 1px solid rgba(95, 87, 88, 0.2);
+		  padding: 20px 25px;
+        }
+
+         #side-menu ul li a i {
+             padding-right: 10px;
+        }
+
+            #side-menu ul li a,#side-menu ul li a:hover {
+                text-decoration: none;
+				font-size: 16px;
+            }
+  
+.logo-text {
+    padding: 20px 30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 900;
+	color: #6E2405;
+
+}
+.menu-close-icon {
+    padding: 0px 10px;
+    cursor: pointer;
+    color: #6E2405;
+    font-size: 25px;
+  
+}
+.menu-open-icon {
+    cursor: pointer;
+    color: #777;
+    padding: 20px 30px;
+    padding: 20px 25px;
+    position: fixed;
+}
+
+.intro-txt {
+    padding: 20px;
+    color: #6E2405;
+}
+
+.btn-warning {
+	border-radius: 7px;
+	margin: 17px;
+}
 
 .btn-social{position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.btn-social>:first-child{position:absolute;left:0;top:0;bottom:0;width:32px;line-height:34px;font-size:1.6em;text-align:center;border-right:1px solid rgba(0,0,0,0.2)}
 
