@@ -3,8 +3,14 @@ extends layout
 block content
   h1 HackerChat
   h1 #{pageData.title}: #{pageData.groups.phone_number}
-  a(href="#{pageData.groups.share_url}" target="_blank") Link to Chatroom
-  h2 Members
+  <br>
+  h2 Hackers you might be interested in:
+  ul
+    each val in pageData.bestMatch
+      li.hackathon-listing #{val['name']}<br> Match: #{val['cash']}%
+  h2 Currently in Chatroom:
+  h3 
+    a(href="#{pageData.groups.share_url}" target="_blank") Link to Chatroom
   ul
     each val, index in pageData.groups.members
       li.hackathon-listing #{val.nickname}
