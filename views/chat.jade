@@ -1,6 +1,16 @@
-extends layout
+head
+	link(rel='script', href='/stylesheets/style.css')
+	script(type='text/javascript' src='/javascripts/jquery.min.js')
+	script(type='text/javascript' src='/javascripts/hipchat.js')
+	
+body
+	block content
 
-block content
-	ul
-		each val in pageData['rooms']
-			li= val['room_id']
+		.embedd_button
+
+		//ul
+			each val in pageData['rooms']
+				li= val['room_id']
+
+	script
+		$(document).ready({$(function() {$('.embedd_button').hipChatPanel({url: "https://www.hipchat.com/gzJqPpnwJ",timezone: "EST"});});});
