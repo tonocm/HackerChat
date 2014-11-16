@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   text-align: center;
+  background-color: #CCCCCC;
   font: 18px "Helvetica", Helvetica, Arial, sans-serif;
 }
 
@@ -14,6 +15,7 @@ nav {
 
 .logo {
 	width: 188px;
+	background-color: white;
 }
 
 .facebook-login {
