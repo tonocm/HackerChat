@@ -9,7 +9,7 @@ block content
     each val in pageData.bestMatch
       li.hackathon-listing #{val['name']}<br> Match: #{val['cash']}%
   h2 Currently in Chatroom:
-  h3 
+  h3
     a(href="#{pageData.groups.share_url}" target="_blank") Link to Chatroom
   ul
     each val, index in pageData.groups.members
