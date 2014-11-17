@@ -1,7 +1,8 @@
 #!/usr/bin/env perl -w
 use strict;
 
-my $key = "eb57d1304f9301326e4e4a62284ce1cf";
+my $key = "fakeKey";
+#my $key = "eb57d1304f9301326e4e4a62284ce1cf";
 
 my @hackers = (
            "GeauxHack",
