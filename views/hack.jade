@@ -7,7 +7,7 @@ block content
   h2 Hackers you might be interested in:
   ul
     each val in pageData.bestMatch
-      li #{val['name']}<br> Match: #{val['cash']}%
+      p #{val['name']} | Match: #{val['cash']}%
   h2 Currently in Chatroom: 
     a(href="#{pageData.groups.share_url}" target="_blank") (start)
   ul
