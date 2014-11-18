@@ -190,7 +190,7 @@ router.get('/chat', function(req, res){
 
 /*router.get('/findloc', function(req, res) {
     var key = 'AIzaSyBoA1LZose7Av4cU_MZzBVd2G4F1mbqb_g';
-    var address = 'Princeton University'; //from website 
+    var address = 'Princeton University'; //from website
     address = escape(address);
     var geoLocationRequest = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + key;
 
