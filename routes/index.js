@@ -145,7 +145,7 @@ router.get('/hack', function(req, res) {
 			            console.log(names[0], names[1]);
 			            API.Groups.show(ACCESS_TOKEN, names[1], function(err,ret) {
 			                console.log(ret);
-			                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret, bestMatch: people}});
+			                res.render('hack', {pageData: {title: req.query.hackathon, groups: ret, bestMatch: people }});
 			            });
 			        }
 			    });
