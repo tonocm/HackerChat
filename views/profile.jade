@@ -53,11 +53,11 @@ block content
       <br>
       <br>
       <br>
-      form(name="sendData" action="/saveprofile")
+      form(name="sendData" action="/saveprofile" method="post")
         input(id='t1', type="hidden", name="interest", value="placeholder")
         input(id='t2', type="hidden", name="language", value="placeholder")
         input(id='t3', type="hidden", name="industry", value="placeholder")
         input(id='t4', type="hidden", name="experience", value="placeholder")
         input(id='t5', type="hidden", name="team", value="placeholder")
-        button(onclick='saveData()', type='submit') Save
+        button(type='submit') Save
         

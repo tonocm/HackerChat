@@ -36,6 +36,7 @@ router.get('/contact', function(req, res){
 });
 
 router.get('/saveprofile', function(req,res){
+	console.log("Hellooo");
 	console.log(req);
 	var Parse = require('parse').Parse;
 	Parse.initialize("movT7QRzOiKtcjXzmU5z79EGWk5xqTnfDdv6lVRR", "XGqPpaAI8ZqJnMfUwu78VMJ2jVnCYe9puGMe2ISE");
